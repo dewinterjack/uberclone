@@ -1,6 +1,7 @@
 packages:
   - apps/expo
   - apps/riders
+  - apps/landing
   - packages/api
   - packages/db
   - packages/config/*
