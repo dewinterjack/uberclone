@@ -1,7 +1,11 @@
 {
   "name": "t3-turbo-and-clerk",
   "private": true,
-  "packageManager": "pnpm@7.13.0",
+  "engines": {
+    "node": ">=20.16.0",
+    "pnpm": "^9.6.0"
+  },
+  "packageManager": "pnpm@9.12.1",
   "scripts": {
     "build": "turbo build",
     "clean": "rm -rf node_modules",
