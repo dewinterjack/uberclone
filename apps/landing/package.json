@@ -4,15 +4,18 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "with-env": "dotenv -e ../../.env --",
-    "dev": "pnpm with-env next dev -p 3000",
     "build": "pnpm with-env next build",
-    "clean": "rm -rf .next .turbo node_modules",
-    "start": "next start",
-    "lint": "next lint",
-    "type-check": "tsc --noEmit"
+    "clean": "git clean -xdf .cache .next .turbo node_modules",
+    "dev": "pnpm with-env next dev",
+    "format": "prettier --check . --ignore-path ../../.gitignore",
+    "lint": "eslint",
+    "start": "pnpm with-env next start",
+    "typecheck": "tsc --noEmit",
+    "with-env": "dotenv -e ../../.env --"
   },
   "dependencies": {
+    "@acme/ui": "workspace:*",
+    "@t3-oss/env-nextjs": "catalog:",
     "next": "catalog:",
     "react": "catalog:react18",
     "react-dom": "catalog:react18"
@@ -26,7 +29,8 @@
     "@types/react": "catalog:react18",
     "@types/react-dom": "catalog:react18",
     "dotenv-cli": "catalog:",
-    "eslint": "catalog:", 
+    "eslint": "catalog:",
+    "jiti": "catalog:",
     "tailwindcss": "catalog:",
     "typescript": "catalog:"
   },

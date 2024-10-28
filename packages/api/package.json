@@ -14,10 +14,10 @@
     "@trpc/client": "^10.1.0",
     "@trpc/server": "^10.1.0",
     "superjson": "^1.9.1",
-    "zod": "^3.18.0"
+    "zod": "catalog:"
   },
   "devDependencies": {
-    "eslint": "^8.28.0",
-    "typescript": "^4.9.3"
+    "eslint": "catalog:",
+    "typescript": "catalog:"
   }
 }
